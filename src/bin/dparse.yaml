@@ -1,0 +1,14 @@
+#
+# YAML description of command-line argument structure.
+#
+# Read programmatically by the `clap` command-line argument parser.
+#
+
+name: dparse
+version: 0.0.1
+about: Parses DTrace's D-language scripts
+args:
+    - SCRIPT:
+        help: script file(s) to parse
+        multiple: true
+        required: true

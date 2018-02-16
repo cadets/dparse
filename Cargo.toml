@@ -1,0 +1,13 @@
+[package]
+name = "dparse"
+version = "0.0.1"
+authors = ["Jonathan Anderson <jonathan.anderson@mun.ca>"]
+
+[[bin]]
+name = "dparse"
+doc = false
+
+[dependencies]
+# TODO: use bin-only clap dependency without `features`
+clap = { version = "2.30", features = ["yaml"] }
+nom = "*"
