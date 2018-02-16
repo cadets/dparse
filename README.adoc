@@ -1,0 +1,3 @@
+= dparse
+
+Rust library (and command-line tool) for parsing DTrace D-language scripts.
