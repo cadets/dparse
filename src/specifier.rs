@@ -46,10 +46,10 @@ use std::fmt;
 ///
 #[derive(Debug)]
 pub struct ProbeSpecifier {
-    provider: Option<String>,
-    module: Option<String>,
-    function: Option<String>,
-    action: Option<String>,
+    pub provider: Option<String>,
+    pub module: Option<String>,
+    pub function: Option<String>,
+    pub action: Option<String>,
 }
 
 impl ProbeSpecifier {
