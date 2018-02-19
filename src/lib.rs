@@ -29,6 +29,23 @@
  * SUCH DAMAGE.
  */
 
+//! A crate for parsing D-language scripts for DTrace.
+//!
+//! Currently we are building up a library of parsers for low-level DTrace language elements,
+//! e.g., probe specifiers:
+//!
+//! ```
+//! if let Ok(probe_name) = dparse::ProbeSpecifier::parse("foo:bar:baz:wibble") {
+//!     match probe_name.provider {
+//!         Some(ref name) => println!("probe provider: '{}'", name),
+//!         None => {},
+//!     }
+//! }
+//! ```
+//!
+//! The grammar of these scripts is described in the
+//! [OpenDTrace documentation repository](https://github.com/opendtrace/documentation).
+
 // Some of nom's macros emit supernumery parentheses.
 #![allow(unused_parens)]
 
